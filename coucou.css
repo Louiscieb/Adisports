@@ -1,0 +1,17 @@
+body{
+    display: grid;
+    max-width: auto;
+    max-height: 100rm;
+    
+    background: lightcoral;
+
+
+}
+
+
+
+.bottom{
+
+    background: lightcyan
+    
+}
