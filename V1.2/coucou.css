@@ -1,0 +1,79 @@
+body{
+    display: grid;
+    height: auto;
+    width: auto;
+    background-image:url("./Images/Fond.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    margin: 0px 0px;
+    font-family: 'Special Elite', cursive;
+
+      
+}
+body *{
+    margin:15px;
+}
+
+.Anime{
+    animation: slide 2s;
+}
+
+@keyframes slide {
+    0%{
+        width: body;
+        height: body ;
+    }
+    100%{
+        translate: 500px;
+        display: none;
+    }
+    
+}
+.entete{
+    width: 100%;
+    display: grid;
+    place-items:center;
+    font-weight:bold;
+    background: green;
+    margin:0px;
+}
+
+.titre h4{
+    text-align: center;
+    margin:0px;
+    font-size:20px;
+    
+}
+.titre h1{
+    font-size: 75px;
+    place-items:center;
+    margin:0px;
+    text-decoration: underline;
+}
+.titre{
+    margin:10px;
+}
+.intro-box {
+    display: grid;          
+    place-items: center;    
+}
+
+.intro {
+    display: grid;
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgb(248, 250, 114);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 0px rgb(0, 0, 24);
+    padding: 2rem;         
+}
+
+
+.bottom {
+    text-align: center;
+    margin: 0px;
+    background: white;
+    width:100%;
+}

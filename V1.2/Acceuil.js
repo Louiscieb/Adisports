@@ -1,0 +1,6 @@
+onload(Stylax);
+
+
+function Stylax(){
+
+}
