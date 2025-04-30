@@ -1,0 +1,275 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Barre latérale */
+  .sidebar {
+    background-color: #46a0fa;
+    color: #f7f7f7;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .sidebar:hover {
+    width: 250px;
+  }
+  
+  .sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+   .sidebar-section {
+    margin-bottom: 20px;
+  }
+
+  .sidebar-section h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .sidebar-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-section li {
+    margin-bottom: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar-section li:hover {
+    transform: translateX(10px);
+  }
+  
+  .sidebar-section a {
+    color: #f7f7f7;
+    text-decoration: none;
+  }
+  
+  .sidebar-section a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contenu principal */
+  .Millieu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  
+  /* Styles de la page d'accueil */
+  .Titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #46a0fa;
+    color: #f7f7f7;
+    padding: 20px;
+    transform: translateY(-100%);
+    animation: headerSlideIn 0.2s ease-in-out forwards;
+  }
+  
+  @keyframes headerSlideIn {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .Cont-titre h1 {
+    font-family: 'Cinzel', sans-serif;
+    margin:0;
+    font-size: 65px;
+    text-decoration: underline;
+  }
+  .Cont-titre{
+    font-family: 'Cinzel', sans-serif;
+    margin-left: 20px;
+  }
+  
+  .Cont-titre h5 {
+    font-family: 'Cinzel', sans-serif;
+    margin: 5px 0 0;
+    font-size: 25px;
+  }
+  
+  .btn-connect {
+    font-family: 'Cinzel', serif;
+    background-color: #152b41;
+    color: #f7f7f7;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+
+  }
+
+  .btn-create {
+    font-family: 'Cinzel', serif;
+    background-color: #f7f7f7;
+    color: #152b41;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+  
+  .unesco-section {
+    background-color:gray;
+    padding: 5px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 5;
+    animation: fadeIn 0.6s ease-in-out 1s forwards;
+    max-height: 15px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .unesco-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f7f7f7;
+  }
+  
+  .unesco-content h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  
+  .event-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #333;
+    padding: 40px 0;
+    flex-grow: 1;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out 1.5s forwards;
+  }
+  
+  .event {
+    display: flex;
+    color: rgb(247, 226, 198);
+    border-width: 1rem;
+    border: 2px solid black;
+    padding: 3px; 
+    background: gray;
+    font-size: 25px;
+    cursor: pointer;
+    transform: scale(0);
+    animation: btnScale 0.3s ease-in-out 2s forwards;
+  }
+
+  .grandbas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .col {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+
+  
+  .bas {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cont {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .cont p {
+    font-family: 'Cinzel', serif; /* Police de caractère antique */
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .cont h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #8c1aff; /* Couleur pourpre antique */
+  }
+  
+  .cont h5 {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    color: #666;
+  }
+
+  .image-bas {
+    min-width: 250px;
+    width: 100%;
+    }
+    .image-gauche {
+    max-width: 450px;
+    height: auto;
+    }
+    .image-droite {
+    max-width: 450px;
+    height: auto;
+    }     
