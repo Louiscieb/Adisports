@@ -1,0 +1,127 @@
+body{
+    display: grid;
+    height: auto;
+    width: auto;
+    background-image:url("./Images/Fond.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    margin: 0px 0px;
+    font-family: 'Special Elite', cursive;
+
+      
+}
+body *{
+    margin:15px;
+}
+
+
+.Anime {
+    margin: 0px;
+    position: fixed;
+    width: 100vw;   
+    height: 100vh;  
+    background-image: url("./Images/Banderole1.png");
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 9999;
+    animation: slide 3s;
+}
+
+@keyframes slide {
+    0% {
+        width: 80vw;   
+        height: 80vh; 
+    }
+    50%{
+        width: 100vw;   
+        height: 100vh; 
+
+    }
+
+    100% {
+            
+    }
+    
+}
+
+.entete{
+    width: 100%;
+    display: flex;
+    place-items:center;
+    font-weight:bold;
+    background: rgb(248, 250, 114);
+    margin:0px;
+}
+
+
+.titre h4{
+    text-align: center;
+    margin:0px;
+    font-size:20px;
+    
+}
+.titre h1{
+    font-size: 75px;
+    place-items:center;
+    margin:0px;
+    text-decoration: underline;
+}
+.titre{
+    margin:1px;
+    margin-left:40%;
+    margin-right: 30%;
+
+}
+.photo_prof {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;      
+    justify-content: center;  
+    width: 30vh;
+    height: 15vh;
+    border-radius: 8px;
+    text-align: center;
+}
+.photo_prof img {
+    margin-bottom: 5px;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 8px;
+}
+
+.intro-box {
+    display: grid;          
+    place-items: center;    
+}
+
+.intro {
+    display: grid;
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgb(248, 250, 114);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 0px rgb(0, 0, 24);
+    padding: 2rem;         
+}
+
+.bottom {
+    position: sticky;
+    top: 100%;
+    text-align: center;
+    margin: 0px;
+    background: white;
+    width:100%;
+}
+.connexion{
+    display: grid;
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    background: rgb(248, 250, 114);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 0px rgb(0, 0, 24);
+    padding: 2rem; 
+}
