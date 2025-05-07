@@ -1,0 +1,106 @@
+body{
+    display: grid;
+    height: auto;
+    width: auto;
+    background-image:url("./Images/Fond.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin: 0px 0px;
+    font-family: 'Special Elite', cursive;
+
+      
+}
+body *{
+    margin:15px;
+}
+
+
+.entete{
+    width: auto;
+    display: flex;
+    place-items:center;
+    font-weight:bold;
+    background: rgb(248, 250, 114);
+    margin:0px;
+}
+
+
+.titre h4{
+    text-align: center;
+    margin:0px;
+    font-size:20px;
+    
+}
+.titre h1{
+    font-size: 75px;
+    place-items:center;
+    margin:0px;
+    text-decoration: underline;
+}
+.titre{
+    margin:1px;
+    margin-left:40%;
+    margin-right: 25%;
+
+}
+.photo_prof {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;      
+    justify-content: center;  
+    width: 30vh;
+    height: 15vh;
+    border-radius: 8px;
+    text-align: center;
+}
+.photo_prof img {
+    margin-bottom: 5px;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 8px;
+}
+
+.intro-box {
+    display: grid;          
+    place-items: center;    
+}
+
+
+
+.bottom {
+    position: sticky;
+    top: 100%;
+    text-align: center;
+    margin: 0px;
+    background: white;
+    width:100%;
+}
+.connexion {
+    display: grid;
+    width: 220px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    background: brown;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.connexion:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.connexion a{
+    font-style: inherit;
+    font-size: 18px;
+    text-decoration:none;
+    color: aliceblue;
+} 
