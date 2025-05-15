@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Special Elite', cursive;
+    background-image: url("./Images/Fond.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+}
+
+.entete{
+    width: auto;
+    display: flex;
+    place-items:center;
+    font-weight:bold;
+    background: rgb(248, 250, 114);
+    margin:0px;
+}
+
+
+.titre h4{
+    text-align: center;
+    margin:0px;
+    font-size:25px;
+    
+}
+.titre h1{
+    font-size: 50px;
+    place-items:center;
+    margin:0px;
+    text-decoration: underline;
+}
+.titre{
+    margin:1px;
+    margin-left:40%;
+    margin-right: 27%;
+
+}
+.connexion {
+    display: grid;
+    width: 220px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    background: brown;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.connexion:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.connexion a{
+    font-style: inherit;
+    font-size: 18px;
+    text-decoration:none;
+    color: aliceblue;
+} 
+.A {
+    background: rgb(248, 250, 114);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.B {
+    display: grid;
+    gap: 15px;
+}
+
+.C {
+    
+    font-size: 25px;
+    height: 50px;
+    background: #bb3800;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    border-radius: 5px;
+}
+label{
+    font-size: 20px;
+}
+input{
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 3px;
+}
+
+.bouton {
+    font-family:inherit;
+    font-size: 20px;
+    width: 60%;
+    height: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #bb3800;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0px;
+    margin-top: 40px;
+
+}
