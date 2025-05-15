@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+
+    background-image:url("./Images/Fond.png");
+    background-repeat: no-repeat;
+    background-position: 50% 15vh;
+    background-size: cover;
+    background-color: #533015;
+
+    font-family: 'Special Elite', cursive;
+}
+
+/* 
+
+Cette partie s'occupe de l'en-tête du site
+
+*/
+
+.entete {
+    display: flex;
+    align-items: center;              
+    justify-content: space-between;   
+    box-sizing: border-box;
+    
+    width: 100%;
+    height: 20vh;
+    background: rgb(248, 250, 114);
+    padding: 0 2.5%;   
+}
+
+.titre {
+    flex: 1 1 auto;
+
+    min-width: 0; 
+    margin-left: 10vw;
+
+    text-align: center;
+}
+
+.titre h1{
+    margin: 2.5vh 0;
+
+    font-size:7.5vh;
+}
+
+.titre h4 {
+    margin: 15px 0;
+
+    font-size: 2.5vh;
+}
+
+.Action {
+    display: flex;
+    flex-direction: column;
+}
+  
+.boutonConnexion,
+.boutonInscription {
+    width: calc(200px + 5vw);
+    height: 7.5vh;
+
+    margin: 2vh 0 ;
+    
+    border-radius: 10px;
+    background: brown;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.boutonConnexion:hover,
+.boutonInscription:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.photo_prof {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;      
+    justify-content: center;  
+
+    width: 30vh;
+    height: 15vh;
+    border-radius: 8px;
+
+    text-align: center;
+}
+
+.photo_prof img {
+    width: 30%;
+    height: 70%;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.utilisateur {
+    width: 100%;
+    height: 5vh;
+    margin-top: 1vh;
+
+    font-style: italic;
+    text-align: center;
+}
+
+/*
+
+Cette partie s'occupe du corps des pages web
+
+*/
+
+.main-box,.formulaire-box,.serveur-box {
+    display: grid;
+    justify-content: center;
+
+    height: auto;
+    max-width: 30%;
+
+    margin: 50px auto;
+    padding: 20px;
+    
+    background-color: rgba(233, 235, 106, 0.9);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 0px rgb(0, 0, 24);
+}
+
+.main-box li{
+    list-style:circle;
+}
+
+p {
+    padding: 5px;
+}
+
+.bottom {
+    width: 100%;
+
+    bottom: 0;
+    position: fixed;   
+
+    background-color: white;
+
+    text-align: center ;
+}
+
+
+.formulaire-box{
+    width: 40%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    gap : 10px;
+}
+
+.formulaire-box h1,.formulaire-box h2{
+    width: 100%;
+    margin: 25px auto;
+    margin-bottom: 10px;
+    height: 50px;
+
+    background-color: #bb3800;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5px;
+
+    color: white;
+    font-size: 25px;
+   
+}
+
+.formulaire-box form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 3.5vh;
+}
+
+.formulaire-box label{
+    font-size: 20px;
+    justify-self: center;
+    
+}
+
+.formulaire-box input{
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.bouton, .bouton_page {
+    font-family:inherit;
+    font-size: 20px;
+    width: 100%;
+    height: 120%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #bb3800;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 0px;
+    margin-top: 40px;
+
+}
+
+.serveur-box {
+    display:block;
+    min-width: 30%;
+    background-color:rgb(233, 235, 106);
+}
+
+.serveur-box p, h2 {
+    margin: 5px 0;
+}
+
+
+.corp,.corp_jeu {
+    margin: auto;
+    margin-top: 15vh;
+
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.connect_creat h2{
+    text-decoration: underline;
+
+}
+
+.serveur-box li {
+    font-style: italic;
+
+    height: 20px;
+    width: auto;
+    text-align: left;
+    margin: 10px 0;
+    padding-left: 40%;
+    list-style: none;
+    border: 2px solid gold;
+    border-radius: 15px;
+    background-color: rgba(255, 0, 0, 0.269);
+}
+
+.context_serveur {
+    text-align: center;
+}
+
+
+
+.context_serveur h2{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    border: 3px solid #533015;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.809);
+}
+
+.choix{
+    background-color: #f5f5d2; 
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px solid #a07366;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.bouton_page{
+    justify-self: center;
+    height : auto;
+    width: 70%;
+    margin: 0;
+    transition: 0.3s ease;
+}
+
+.bouton_page:hover {
+    background-color: #a23100;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+body.jeu {
+    
+    height: auto;
+
+    background-image:url("./Images/table.png");
+    background-repeat: no-repeat;
+    background-position: 50% 15vh;
+    background-size: cover;
+    background-color: #533015;
+
+    overflow-y: auto;
+
+}
+
+.corp_jeu {
+    display: flex;
+    gap : 2vw;
+    margin: 0;
+}
+.carnet{
+
+    width: 40vw;
+    height: auto;
+    aspect-ratio: 1;
+
+    margin-top: 25vh;
+
+    background-image:url("./Images/carnet.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0px 0px 20px 10px rgba(90, 255, 85, 0.75);
+
+
+    position: relative;
+}
+
+.notes{
+    
+    position: absolute;
+    height: 50%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    right: 7%;
+    top: 25.5%;
+    padding: 10px;
+
+    
+    transform: rotate(-5deg);
+}
+.notes h3{
+    font-size: 1.25vw;
+    font-style: italic;
+    color: #bb3800;
+}
+.notes p{
+    width: 100%;
+    text-align: right;
+
+    font-size: 1vw;
+    font-style: italic;
+    color: rgb(77, 77, 250);
+
+    cursor: pointer;
+
+    
+}
+
+.bomb{
+    width: 200px;
+    height: 200px;
+
+    background-image:url("./Images/bomb.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #533015;
+
+    box-shadow: 0px 0px 20px 10px rgb(124, 60, 18);
+    position: absolute;
+    top:25%;
+    right:10%;
+
+
+}
+
+.chatbox{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 40vw; 
+    height: auto; 
+    aspect-ratio: 1;
+
+    margin-top: 25vh;
+
+    background-image: url('./Images/clipboard.png');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: center;
+    box-shadow: 0px 0px 20px 10px rgba(0, 136, 255, 0.75);
+
+}
+
+
+#affichage {
+    height: 50%;
+    margin-top: 10px;
+    margin-left: 7.6vw;
+    width: 100%;
+    padding: 0 20px 20px 20px; 
+    overflow-y: auto;
+    
+    font-size: 1.5vh;
+    font-family: cursive, monospace;
+    
+    list-style: none;
+
+    color: black;
+}
+
+
+
+#chat_box{
+    height: 5vh;
+    width: 45%;
+
+    text-align: center;
+    margin: 0 auto;
+}
+
+#chat_box input{
+    background-color: beige;
+    border-radius: 7.5px;
+}
+
+/*
+
+Animation quand l'utilisateure rentre en jeu
+
+*/
+
+.Anime {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    pointer-events: none;
+    animation: hideWrapper 10s forwards;
+}
+
+.Anime img {
+    width: 10vw;
+    height: auto;
+    animation: growThenFade 10s forwards;
+}
+
+
+@keyframes growThenFade {
+    0% {
+        transform: scale(0.1);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(10);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+
+@keyframes hideWrapper {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+/*
+
+Les @media s'occupent du responsive de l'en-tête
+
+*/
+@media screen and (max-height: 350px) and (min-width: 800px){
+    .entete {
+        height:70px;
+    }
+    .titre h1{
+        margin: 8.75px 0;
+        font-size: 27px;
+    }
+    .titre h4 {
+        margin: 15px 0;
+        font-size: 10px;
+    }
+    .boutonConnexion,
+    .boutonInscription{
+        height: 25px;
+        margin: 5px 0;
+    }
+    body {
+        background-position: 50% 55px;
+    }
+
+    
+}
+
+@media screen and (max-width: 800px) {
+    .entete {
+      flex-direction: column;     
+      align-items: center;         
+      height: auto ;                        
+    }
+    .titre {
+        margin-left: 0;
+    }
+    .titre h1{
+        margin: 8.75px 0;
+        font-size: 30px;
+    }
+    .titre h4 {
+        margin: 15px 0;
+        font-size: 15px;
+    }
+    .Action {
+      flex-direction: row;         
+      justify-content:center;                          
+    }
+    .boutonConnexion,
+    .boutonInscription {
+        margin: 1vw 10px;
+        height: 25px;                
+    }
+    body {
+        background-position: 50% 80px;
+    }
+    /*Responsive pour de la page du jeu*/
+    .corp_jeu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .chatbox{
+        margin: 15px;
+        width: 320px;
+        height: 320px;
+    }
+    .carnet{
+        width: 320px;
+        height: 320px;
+    }
+    #affichage {
+        margin-left: 65px;
+    }
+}
