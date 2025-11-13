@@ -1,2 +1,2 @@
 # Adisports
-Un site reprennant l'idée d'adibou/qui est-ce? en 1 contre plusieurs 
+Web site game like "qui est ce ?" with one gm against several player. Focusing on the php/Ajax and session creation
